@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {}
+    "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {}
   },
   "projects": {
-    "c:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {
+    "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
+        "projectUniqueName": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
         "projectName": "class-assignment-4",
-        "projectPath": "c:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
+        "projectPath": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
         "packagesPath": "C:\\Users\\tonyf\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\obj\\",
+        "outputPath": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tonyf\\AppData\\Roaming\\NuGet\\NuGet.Config"

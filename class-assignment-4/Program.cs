@@ -71,15 +71,15 @@ string Prompt(string prompt)
     return myString;
 }
 
-int PromptDouble(string msg, double min)
+double PromptDouble(string msg, double min)
 {
-    int num = 0;
+    double num = 0;
     while (true)
     {
         try
         {
             Console.Write($"{msg}");
-            num = int.Parse(Console.ReadLine());
+            num = double.Parse(Console.ReadLine());
             if (num <= 0)
                 throw new Exception($"Must be bigger than {min}");
             break;
@@ -117,11 +117,12 @@ void GetLastName(Client client)
 
 void GetWeight(Client client)
 {
-    int myDouble = PromptDouble("Enter client's weight in pounds: ", 0);
+    double myDouble = PromptDouble("Enter client's weight in pounds: ", 0);
     client.Weight = myDouble;
 }
 
 void GetHeight(Client client)
 {
-    int myInt = PromptDouble("Enter the client's height in inches: ", 0);
+    double myDouble = PromptDouble("Enter the client's height in inches: ", 0);
+    client.Height = myDouble;
 }

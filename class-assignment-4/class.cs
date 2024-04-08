@@ -74,7 +74,7 @@ namespace Clients
         {
             get
             {
-                double score = Weight / (Height * Height) * 703;
+                double score = ((Weight / (Height * Height)) * 703);
                 return score;
             }
         }
