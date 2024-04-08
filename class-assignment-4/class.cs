@@ -11,8 +11,8 @@ namespace Clients
     {
         private string _firstName;
         private string _lastName;
-        private int _weight;
-        private int _height;
+        private double _weight;
+        private double _height;
 
         public Client()
         {
@@ -21,9 +21,12 @@ namespace Clients
             Weight = 0;
             Height = 0;
         }
-        public Client(string firstName, string lastName, int weight, int height)
+        public Client(string firstName, string lastName, double weight, double height)
         {
             FirstName = firstName;
+            LastName = lastName;
+            Weight = weight;
+            Height = height;
         }
 
         public string FirstName
@@ -47,7 +50,7 @@ namespace Clients
                 _lastName = value;
             }
         }
-        public int Weight
+        public double Weight
         {
             get { return _weight; }
             set
@@ -57,7 +60,7 @@ namespace Clients
                 _weight = value;
             }
         }
-        public int Height
+        public double Height
         {
             get { return _height; }
             set

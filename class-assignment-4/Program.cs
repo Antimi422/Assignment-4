@@ -1,6 +1,6 @@
 ﻿using Clients;
 
-
+Client myClient = new();
 bool loopAgain = true;
 while (loopAgain)
 {
@@ -8,6 +8,15 @@ while (loopAgain)
     {
         DisplayMainMenu();
         string mainMenuChoice = Prompt("\nEnter a Main Menu Choice: ").ToUpper();
+        if (mainMenuChoice == "N")
+            myClient = NewClient();
+        if (mainMenuChoice == "S")
+            ShowClientInfo(myClient);
+        if (mainMenuChoice == "Q")
+        {
+            loopAgain = false;
+            throw new Exception("Bye");
+        }
     }
     catch (Exception ex)
     {
@@ -31,6 +40,16 @@ void DisplayMainMenu()
     Console.WriteLine("[Q]uit");
 }
 
+void ShowClientInfo(Client client)
+{
+    if (client == null)
+        throw new Exception("No client in memory");
+    Console.WriteLine("\n=== Client Info ===");
+    Console.WriteLine($"Client Name:    {client.FullName}");
+    Console.WriteLine($"BMI Score:      {client.BMIScore}");
+    Console.WriteLine($"BMI Status:     {client.BMIStatus}");
+}
+
 string Prompt(string prompt)
 {
     string myString = "";
@@ -50,4 +69,59 @@ string Prompt(string prompt)
         }
     }
     return myString;
+}
+
+int PromptDouble(string msg, double min)
+{
+    int num = 0;
+    while (true)
+    {
+        try
+        {
+            Console.Write($"{msg}");
+            num = int.Parse(Console.ReadLine());
+            if (num <= 0)
+                throw new Exception($"Must be bigger than {min}");
+            break;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Invalid: {ex.Message}");
+        }
+    }
+    return num;
+}
+
+Client NewClient()
+{
+    Client myClient = new();
+    GetFirstName(myClient);
+    GetLastName(myClient);
+    GetWeight(myClient);
+    GetHeight(myClient);
+    Console.WriteLine("\nClient Sucessfully Created.");
+    return myClient;
+}
+
+void GetFirstName(Client client)
+{
+    string myString = Prompt("Enter client's First Name: ");
+    client.FirstName = myString;
+}
+
+void GetLastName(Client client)
+{
+    string myString = Prompt("Enter client's Last Name: ");
+    client.LastName = myString;
+}
+
+void GetWeight(Client client)
+{
+    int myDouble = PromptDouble("Enter client's weight in pounds: ", 0);
+    client.Weight = myDouble;
+}
+
+void GetHeight(Client client)
+{
+    int myInt = PromptDouble("Enter the client's height in inches: ", 0);
 }
