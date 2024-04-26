@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {}
+    "C:\\Users\\15879\\OneDrive - NAIT\\cspc1012-assignment3\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {
+    "C:\\Users\\15879\\OneDrive - NAIT\\cspc1012-assignment3\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
+        "projectUniqueName": "C:\\Users\\15879\\OneDrive - NAIT\\cspc1012-assignment3\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
         "projectName": "class-assignment-4",
-        "projectPath": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
-        "packagesPath": "C:\\Users\\tonyf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tonyf\\OneDrive\\Documents\\GitHub\\Assignment-4\\class-assignment-4\\obj\\",
+        "projectPath": "C:\\Users\\15879\\OneDrive - NAIT\\cspc1012-assignment3\\Assignment-4\\class-assignment-4\\class-assignment-4.csproj",
+        "packagesPath": "C:\\Users\\15879\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\15879\\OneDrive - NAIT\\cspc1012-assignment3\\Assignment-4\\class-assignment-4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tonyf\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\15879\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
